@@ -13,9 +13,7 @@ import java.util.Objects;
 public class Parque {
     private int cod, areaTotal;
     private String nome, local;
-    private enum Veg{ARBOREA,ARBUSTIVA,HERBACEA};
     
-    private static final Veg VEG_POR_OMISSAO = Veg.ARBOREA;
     private static final int COD_POR_OMISSAO = 0, AREATOTAL_POR_OMISSAO=0;
     private static final String NOME_POR_OMISSAO = "", LOCAL_POR_OMISSAO = "";
 

@@ -51,6 +51,8 @@ public class ParqueDiversoes extends Parque implements Pagavel{
     public String toString() {
         return "ParqueDiversoes{" + "atr=" + atr + '}';
     }
+
+    
     
     public void adicionarAtracao(Atracao a){
         atr.add(a);
@@ -62,7 +64,7 @@ public class ParqueDiversoes extends Parque implements Pagavel{
     
     public double cobrarEntrada(int idade){
         if (idade<idadeReferencia) {
-            return precoBilhete*descontoIdade;
+            return precoBilhete*(1-descontoIdade);
         }else{
             return precoBilhete;
         }

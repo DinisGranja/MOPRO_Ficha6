@@ -19,7 +19,7 @@ public class ParqueUrbano extends Parque implements Pagavel{
     private static final int AREAVERDE_POR_OMISSAO = 0, AREAQUATICA_POR_OMISSAO = 0;
     private static final Solo SOLO_POR_OMISSAO = new Solo();
     
-    public ParqueUrbano(int areaVerde, int areaAquatica, Solo solo, int cod, int areaTotal, String nome, String local) {
+    public ParqueUrbano(int cod, int areaTotal, String nome, String local, int areaVerde, int areaAquatica, Solo solo) {
         super(cod, areaTotal, nome, local);
         setAreaVerde(areaVerde);
         setAreaAquatica(areaAquatica);
