@@ -80,7 +80,7 @@ public class ParqueUrbano extends Parque implements Pagavel{
 
     @Override
     public String toString() {
-        return "ParqueUrbano{" + "areaVerde=" + areaVerde + ", areaAquatica=" + areaAquatica + ", solo=" + solo + '}';
+        return "ParqueUrbano{"+ super.toString() + "areaVerde=" + areaVerde + ", areaAquatica=" + areaAquatica + ", solo=" + solo.toString() + '}';
     }
     
     public double cobrarEntrada(int idade){

@@ -44,5 +44,10 @@ public class Solo {
     public void setTeorMateriaOrganica(float teorMateriaOrganica) {
         this.teorMateriaOrganica = teorMateriaOrganica;
     }
+
+    @Override
+    public String toString() {
+        return "Solo{" + "valor_PH=" + valor_PH + ", teorMateriaOrganica=" + teorMateriaOrganica + '}';
+    }
     
 }

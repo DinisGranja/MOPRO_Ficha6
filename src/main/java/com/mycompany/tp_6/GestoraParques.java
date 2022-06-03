@@ -48,11 +48,11 @@ public class GestoraParques {
 
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer();
-        sb.append("GestoraParques{" + "nif= "+nif);
+        String txt="";
+        txt+=("GestoraParques{" + "nif= "+nif+"}");
         for(int i=0;i<listaParques.size();i++)
-            sb.append("\n"+listaParques.get(i));
-        return sb.toString();
+            txt+="\n"+listaParques.get(i).toString();
+        return txt;
     }
     public void adicionarParque(Parque parque){
         // Foi escolhida a relação a Agregação. Poderia também ser por composição (listaParques.add(new Parque(parque));)

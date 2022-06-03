@@ -39,8 +39,8 @@ public class Tp_6 {
         System.out.println(pn1.getVeg());
         */
         
-        ParqueDiversao pd1 = new ParqueDiversao(1, 2500, "Parque Diversao1", "Braga");
-        ParqueNatural pn1 = new ParqueNatural(2, 12800, "Parque Natural2", "Leiria",ParqueNatural.Vegetacao.ARBOREA);
+        ParqueDiversoes pd1 = new ParqueDiversoes(1, 2500, "Parque Diversao1", "Braga");
+        ParqueNatural pn1 = new ParqueNatural(2, 12800, "Parque Natural2", "Leiria",ParqueNatural.Veg.ARBOREA);
         ParqueUrbano pb1 = new ParqueUrbano(3, 2500, "Parque Urbano1", "Porto",2000,500,new Solo(3,6));
         GestoraParques gp = new GestoraParques("12345678");
         gp.adicionarParque(pd1);

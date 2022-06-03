@@ -49,7 +49,11 @@ public class ParqueDiversoes extends Parque implements Pagavel{
 
     @Override
     public String toString() {
-        return "ParqueDiversoes{" + "atr=" + atr + '}';
+        String txt = super.toString();
+        for (int i = 0; i < atr.size(); i++) {
+            txt+=atr.get(i).toString()+"\n";
+        }
+        return "ParqueDiversoes{" + txt +'}';
     }
 
     
